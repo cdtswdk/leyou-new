@@ -1,0 +1,20 @@
+server:
+  port: 1116
+spring:
+  application:
+    name: goods-web
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    host: 192.168.254.128
+    username: leyou
+    password: leyou
+    virtual-host: /leyou
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+    registry-fetch-interval-seconds: 10 # 拉取微服务时间
+  instance:
+    lease-renewal-interval-in-seconds: 5 # 每隔5秒发送一次心跳
+    lease-expiration-duration-in-seconds: 15  # 10秒不发送就过期

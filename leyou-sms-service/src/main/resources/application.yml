@@ -1,0 +1,15 @@
+server:
+  port: 1118
+spring:
+  rabbitmq:
+    host: 192.168.254.128
+    virtual-host: /leyou
+    username: leyou
+
+    password: leyou
+leyou:
+  sms:
+    accessKeyId: LTAI4GCgLzFF3FJj3GLx4vvr # 你自己的accessKeyId
+    accessKeySecret: dsPR8IBk1I3PsmXSTMcK9rEjrtqirU # 你自己的AccessKeySecret
+    signName: 乐优商城 # 签名名称
+    verifyCodeTemplate: SMS_189216040 # 模板名称
